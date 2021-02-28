@@ -1,0 +1,117 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  font-family: 'Walter Turncoat', Helvetica, sans-serif;
+  text-align: center;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:white;
+}
+#board{
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  height: 500px;
+  width: 640px;
+  justify-content: center;
+  background-image: url(../img/chalkboard.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+.innerBoard{
+  /* margin: 20px; */
+}
+.row1,
+.row2,
+.row3{
+  display: flex;
+}
+div{
+  height: 150px;
+  width: 150px;
+  flex: 1 0 33%;
+  font-size: 100px;
+
+}
+#square-1,
+#square-2,
+#square-4,
+#square-5{
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+}
+#square-3,
+#square-6{
+  border-bottom: 3px solid white;
+}
+#square-7,
+#square-8{
+  border-right: 3px solid white;
+}
+.resetArea{
+  padding-top: 20px;
+}
+h2{
+  font-size:3rem;
+  color: white;
+}
+ span{
+   font-size: 6rem;
+   color: white;
+ }
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
